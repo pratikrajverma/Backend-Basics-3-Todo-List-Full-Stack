@@ -97,3 +97,6 @@ const showTodo = async (req,res)=>{
           });
     }
 }
+
+
+module.exports = {createTodo, deleteTodo ,showTodo}
