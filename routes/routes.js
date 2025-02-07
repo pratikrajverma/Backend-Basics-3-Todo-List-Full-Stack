@@ -13,7 +13,7 @@ router.get('/showTodo', showTodo)
 
 //............  Deletion API............
 
-router.delete('/deleteTodo', deleteTodo)
+router.delete('/deleteTodo/:todoId', deleteTodo)
 
 module.exports = router;
 
