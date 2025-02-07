@@ -1,7 +1,17 @@
 const express = require('express')
 const app = express()
-
 require('dotenv').config()
+
+const cors = require('cors')
+app.use(cors({
+    origin:'*'
+}))
+
+app.use(express.json())
+
+const router = require('./routes/routes')
+app.use('/api/v1', router)
+
 
 const connectDB = require('./database/database')
 connectDB()
