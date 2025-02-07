@@ -77,7 +77,7 @@ const deleteTodo = async (req,res)=>{
 const showTodo = async (req,res)=>{
     try{
         const data = await Todo.find()
-                
+
         if(!data){
             return res.status(400).json({
                 success:false,
@@ -90,7 +90,6 @@ const showTodo = async (req,res)=>{
             message:"data fetch successfuly",
             data:data,
         })
-
     }catch(err){
         return res.status(400).json({
             success: false,
