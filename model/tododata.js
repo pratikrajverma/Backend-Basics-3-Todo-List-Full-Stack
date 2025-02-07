@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 const todoSchema = new mongoose.Schema({
-    list:{
+    inputValue:{
         type:String,
         required:true
     }
